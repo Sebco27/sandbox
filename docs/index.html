@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentación del proyecto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f3f4f6;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      max-width: 480px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
+    .menu {
+      list-style: none;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .menu a {
+      display: block;
+      text-decoration: none;
+      padding: 0.9rem 1rem;
+      border-radius: 0.7rem;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      font-size: 0.95rem;
+      color: #111827;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease, border-color 0.08s ease;
+    }
+
+    .menu a span {
+      display: block;
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+
+    .menu a:hover {
+      background: #eff6ff;
+      border-color: #93c5fd;
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Recursos del proyecto</h1>
+    <p>
+      Todo el contenido web disponible en mi repositorio <strong>sandbox</strong>.
+      <span style="color:#fc0303;"><strong>ATENCIÓN:</strong></span> Todo el contenido está en fase de pruebas y debe ser tratado como tal.
+    </p>
+
+    <ul class="menu">
+      <li>
+        <a href="QA/coverage/lcov-report/index.html">
+          Reporte de cobertura (usando Jest)
+          <span>Reporte generado para el proyecto del curso de QA.</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer">
+      <span>Deploy: GitHub Pages</span>
+    </div>
+  </main>
+</body>
+</html>
